@@ -202,26 +202,13 @@ This separation allows the frontend and AI backend to evolve independently while
 
 ## Tech Stack
 
-### Frontend
-
-* **Next.js 14+**
-* **React**
-* **TypeScript**
-* **Tailwind CSS**
-* **Lucide React**
-
-### Backend
-
-* **Python 3.8+**
-* **FastAPI**
-* **Uvicorn**
-* **Pydantic**
-* **HTTPX**
-* **python-dotenv**
-
-### AI
-
-* **Google Gemini API**
+| Layer | Technologies |
+|---|---|
+| **Frontend** | Next.js 14+, React, TypeScript, Tailwind CSS, Lucide React |
+| **Backend** | Python 3.8+, FastAPI, Uvicorn, Pydantic, HTTPX, python-dotenv |
+| **AI Engine** | Google Gemini API |
+| **API Communication** | REST API, HTTP/JSON |
+| **Development** | Git, npm, Python Virtual Environment |
 
 ---
 
