@@ -13,7 +13,7 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-009688.svg)
 ![Next.js](https://img.shields.io/badge/Next.js-14%2B-000000.svg)
 ![AI](https://img.shields.io/badge/AI-Google%20Gemini-8E75B2.svg)
-![UI](https://img.shields.io/badge/UI-Dark%20Only-0D1117.svg)
+![UI](https://img.shields.io/badge/UI-Dark%20Theme-0D1117.svg)
 
 </div>
 
