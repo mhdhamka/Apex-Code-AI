@@ -17,7 +17,7 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 if not GEMINI_API_KEY:
     raise RuntimeError("GEMINI_API_KEY not found in environment variables")
 
-MODEL_NAME = "gemini-1.5-flash" # Updated to a standard valid endpoint model name, change if needed
+MODEL_NAME = "gemini-3.6-flash" 
 GEMINI_ENDPOINT = f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL_NAME}:generateContent"
 
 app = FastAPI(title="AI Code Review Bot", version="1.0.0")
