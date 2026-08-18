@@ -557,11 +557,12 @@ export default function CodeReviewPage() {
                             <button
                               onClick={() => {
                                 setAppliedSnippets((prev) => ({ ...prev, [snippetIndex]: true }));
+                                setCode(codeString);
+                                setViewMode("review");
+
                                 if (typeof window !== "undefined" && (window as any).acquireVsCodeApi) {
                                   const vscode = (window as any).acquireVsCodeApi();
                                   vscode.postMessage({ command: "applyFix", code: codeString });
-                                } else {
-                                  navigator.clipboard.writeText(codeString);
                                 }
                               }}
                               className={`px-2.5 py-1 rounded-md text-xs font-medium flex items-center gap-1.5 transition-all ${isApplied ? "bg-emerald-500/20 text-emerald-400 border border-emerald-500/30" : "bg-zinc-800 hover:bg-zinc-700 text-zinc-200"}`}
