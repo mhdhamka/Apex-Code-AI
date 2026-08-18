@@ -462,7 +462,7 @@ npm start
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 * [x] AI-powered code review
 * [x] FastAPI backend
