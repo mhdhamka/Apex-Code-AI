@@ -6,7 +6,7 @@
 
 **A multi-model code intelligence platform that analyzes source code, diffs, and project files using AI — delivering actionable feedback across correctness, security, performance, maintainability, and architecture.**
 
-[Live Demo](http://localhost:3000) · [Report Bug](https://github.com) · [Request Feature](https://github.com)
+[Live Demo](http://localhost:3000) · [Report Bug](https://github.com/mhdhamka/Apex-Code-AI/issues) · [Request Feature](https://github.com/mhdhamka/Apex-Code-AI/issues)
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-3776AB.svg)
