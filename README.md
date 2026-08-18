@@ -44,7 +44,7 @@ The platform supports multiple analysis workflows, from quick code snippets to G
 
 <div align="center">
 
-![Apex Code AI Analysis & Inspector](./src/assets/images/preview.png)
+![Apex Code AI Analysis & Inspector](./src/assets/images/preview.jpg)
 
 *AI-driven code analysis and interactive developer workspace*
 
