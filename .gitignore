@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+env/
+venv/
+*.env
+*.venv
+*.egg-info/
+dist/
+build/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+*.log
+yarn-error.log
+npm-debug.log
+
+# TypeScript
+*.tsbuildinfo
+
+# Local environment
+.env.local
+.env.*.local
+
+# IDE / Editor
+.idea/
+*.sublime-project
+*.sublime-workspace
