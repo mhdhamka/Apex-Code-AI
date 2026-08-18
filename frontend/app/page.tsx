@@ -216,6 +216,24 @@ export default function CodeReviewPage() {
     setTimeout(() => setCopied(false), 2000);
   };
 
+  // Helper to parse and filter markdown review by severity
+  const getFilteredReviewContent = (fullReview: string, filter: string) => {
+    if (filter === "all" || !fullReview) return fullReview;
+
+    // Split review into sections (assuming headers like ### or bullet points separate issues)
+    const sections = fullReview.split(/(?=^#{1,4}\s+|\n- |\n\* )/gm);
+    
+    const filtered = sections.filter((section) => {
+      const lower = section.toLowerCase();
+      if (filter === "critical") return lower.includes("critical") || lower.includes("high") || lower.includes("error");
+      if (filter === "security") return lower.includes("security") || lower.includes("vulnerability") || lower.includes("auth") || lower.includes("injection");
+      if (filter === "performance") return lower.includes("performance") || lower.includes("slow") || lower.includes("memory") || lower.includes("optimize");
+      return true;
+    });
+
+    return filtered.length > 0 ? filtered.join("\n") : "*(No specific issues found matching the selected `" + filter + "` filter)*";
+  };
+
   // Helper to calculate a dynamic mock quality score based on length & keywords
   const calculateQualityScore = (text: string) => {
     if (!text) return { grade: "N/A", score: 0 };
@@ -538,7 +556,7 @@ export default function CodeReviewPage() {
               ))}
             </div>
 
-            {/* Review Content with Custom ReactMarkdown component to inject Feature 3 ("Apply Fix" buttons) */}
+            {/* Review Content with Filter and Custom ReactMarkdown component */}
             <div className="text-zinc-300 text-sm space-y-4 leading-relaxed prose prose-invert max-w-none pt-2 font-sans">
               <ReactMarkdown
                 components={{
@@ -581,7 +599,7 @@ export default function CodeReviewPage() {
                   }
                 }}
               >
-                {review}
+                {getFilteredReviewContent(review, selectedSeverityFilter)}
               </ReactMarkdown>
             </div>
 
