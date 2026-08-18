@@ -1,6 +1,6 @@
-# Apex Code AI
-
 <div align="center">
+  
+# Apex Code AI
 
 ### AI-Powered Code Intelligence & Review Workspace
 
