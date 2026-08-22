@@ -11,7 +11,7 @@
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python](https://img.shields.io/badge/python-3.8%2B-3776AB.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104%2B-009688.svg)
-![Next.js](https://img.shields.io/badge/Next.js-16-000000.svg)
+![Next.js](https://img.shields.io/badge/Next.js-16.1-000000.svg)
 ![AI](https://img.shields.io/badge/AI-Google%20Gemini-8E75B2.svg)
 ![UI](https://img.shields.io/badge/UI-Dark%20Theme-0D1117.svg)
 
